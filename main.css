@@ -26,7 +26,6 @@ img.headerimg{
 }
 
 /* Navigation bar */
-
 nav {
   background-color: #013674;
   display: block;
@@ -244,23 +243,23 @@ img.leader{
   font-size: x-large;
   font-size: 30px;
   position: relative;
-  z-index: 1; /* Ensure the text is above the bar */
+  z-index: 1;
   color: rgb(255,255,255)
 }
 .people-former-container {
-  position: relative; /* 相对定位，用于定位条形 */
+  position: relative;
   margin-bottom: 20px;
 }
 
 .people-former-bar {
-  height: 40px; /* 条形的高度 */
-  background-color: #7fc7f8; /* 条形的颜色 */
+  height: 40px;
+  background-color: #7fc7f8;
   position: absolute;
-  bottom: 0; /* Align the bar just below the text */
+  bottom: 0;
   left: 0;
-  width: 90%; /* Ensure it spans the full width */
+  width: 90%;
   display: flex;
-  align-items: center; /* Vertically center the text in the bar */
+  align-items: center;
   justify-content: center;
   margin-left: 3.6em;
   margin-right: 4em;
@@ -273,8 +272,8 @@ img.leader{
 }
 
 .member {
-  flex: 1 1 200px; /* 这允许成员在容器中占据至少200px的宽度，但也可以更小 */
-  margin: 10px; /* 添加一些外边距 */
+  flex: 1 1 200px;
+  margin: 10px;
   border: 0px solid #ccc;
   padding: 10px;
   transition: all 0.3s ease;
@@ -285,9 +284,9 @@ img.leader{
   margin-left:4em;
 }
 .member img {
-  width: auto; /* 设置图片宽度为80px */
-  height: 200px; /* 保持图片高度自动，以维持图片的原始比例 */
-  margin-bottom: 10px; /* 图片和文本之间的间距 */
+  width: auto;
+  height: 200px;
+  margin-bottom: 10px;
   text-align: center;
 }
 .member:hover {
@@ -295,7 +294,7 @@ img.leader{
 }
 
 .member:hover h3 {
-  color: #013674; /* 鼠标悬停时名字变成蓝色 */
+  color: #013674;
 }
 
 .member.active {
@@ -303,7 +302,7 @@ img.leader{
 }
 
 .member.active.read-more  {
-  display: block;/* 点击后显示介绍 */
+  display: block;
 }
 
 .read-more {
@@ -321,19 +320,19 @@ img.leader{
 }
 
 .alumni-table {
-  width: 100%; /* 表格宽度 */
-  border-collapse: collapse; /* 合并边框 */
-  margin: 20px 0; /* 上下边距 */
-  border: 0px solid #ddd; /* 表格边框 */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  border: 0px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .alumni-table td {
-  width: 33.333%; /* 三列宽度相等 */
-  border: 0px solid #ddd; /* 单元格边框 */
-  padding: 10px; /* 单元格内边距 */
-  text-align: center; /* 文本居中 */
-  vertical-align: middle; /* 垂直居中 */
+  width: 33.333%;
+  border: 0px solid #ddd;
+  padding: 10px;
+  text-align: center;
+  vertical-align: middle;
   display: table-cell;
   font-family: 18zpx;
 }
@@ -369,19 +368,19 @@ ul.ref{
 
 
 .container {
-  position: relative; /* 相对定位，用于定位条形 */
+  position: relative;
   margin-bottom: 20px;
 }
 
 .bar {
-  height: 31px; /* 条形的高度 */
-  background-color: #7fc7f8; /* 条形的颜色 */
+  height: 31px;
+  background-color: #7fc7f8;
   position: absolute;
-  bottom: 0; /* Align the bar just below the text */
+  bottom: 0;
   left: 0;
-  width: 80%; /* Ensure it spans the full width */
+  width: 80%;
   display: flex;
-  align-items: center; /* Vertically center the text in the bar */
+  align-items: center;
   justify-content: center;
   margin-left: 8em;
 }
@@ -391,44 +390,44 @@ ul.ref{
   font-size: 23px;
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
-  text-align: center; /* Center text */
+  text-align: center;
   position: relative;
-  z-index: 1; /* Ensure the text is above the bar */
+  z-index: 1;
   color: rgb(255,255,255);
 }
 
 
 
 .article-container {
-  display: flex; /* 使图片和文本水平排列 */
-  align-items: center; /* 从顶部开始对齐 */
+  display: flex;
+  align-items: center;
   margin: 16px;
   margin-left: 8em;
 }
 
 .article-image {
-  width: 120px; /* 图片宽度 */
-  height: auto; /* 保持图片比例 */
-  margin-right: 20px; /* 图片与文本之间的间距 */
+  width: 120px;
+  height: auto;
+  margin-right: 20px;
 }
 
 .title {
-  color: rgb(10, 10, 10); /* 标题颜色 */
-  font-size: 18px; /* 标题字体大小 */
+  color: rgb(10, 10, 10);
+  font-size: 18px;
 }
 
 .authors, .publication {
-  font-size: 16px; /* 作者和出版信息字体大小 */
-  color: #444444; /* 作者和出版信息颜色 */
+  font-size: 16px;
+  color: #444444;
 }
 
 .publication a {
-  color: blue; /* PDF链接颜色 */
-  text-decoration: none; /* 去掉下划线 */
+  color: blue;
+  text-decoration: none;
 }
 
 .publication a:hover {
-  text-decoration: underline; /* 鼠标悬停时添加下划线 */
+  text-decoration: underline;
 }
 </style>
 
@@ -467,28 +466,27 @@ div.gallery{
 
 .image-container {
   display: flex;
-  flex-direction: column; /* 将flex方向设置为列 */
-  align-items: center; /* 水平居中对齐 */
-  flex-wrap: wrap; /* 允许换行 */
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 .image-container img {
-  width: 80%; /* 设置图片宽度为容器的100% */
-  height: auto; /* 保持图片的原始宽高比 */
-  max-width: 600px; /* 设置图片的最大宽度，防止图片过大 */
-  margin-bottom: 20px; /* 图片与文字之间的间距 */
+  width: 80%;
+  height: auto;
+  max-width: 600px;
+  margin-bottom: 20px;
 }
 
 .image-container p {
-  margin: 0; /* 去除默认的外边距 */
+  margin: 0;
   text-align: center;
   margin-top: -10px;
 }
 
-/* 为两张图片之间的间距添加额外的外边距 */
 .image-container img:nth-child(3n+2) {
-  margin-top: 100px; /* 第二行第一张图片的上边距 */
+  margin-top: 100px;
 }
 
 
@@ -501,8 +499,8 @@ div.gallery{
 }
 
 .news{
-  flex: 1 1 200px; /* 这允许成员在容器中占据至少200px的宽度，但也可以更小 */
-  margin: 10px; /* 添加一些外边距 */
+  flex: 1 1 200px;
+  margin: 10px;
   border: 0px solid #ccc;
   padding: 10px;z
   transition: all 0.3s ease;
@@ -515,11 +513,11 @@ div.gallery{
 }
 
 .news img {
-  width: auto; /* 设置图片宽度为80px */
-  height: 200px; /* 保持图片高度自动，以维持图片的原始比例 */
-  margin-bottom: 10px; /* 图片和文本之间的间距 */
+  width: auto;
+  height: 200px;
+  margin-bottom: 10px;
   text-align: center;
-  transition: transform 0.3s ease; /* 平滑过渡效果 */
+  transition: transform 0.3s ease;
 }
 
 .news:hover {
@@ -527,12 +525,11 @@ div.gallery{
 }
 
 .news:hover img {
-  transform: scale(1.2); /* 点击时放大图片 */
+  transform: scale(1.2);
 }
 
-/* Hover效果：文字变蓝 */
 .news:hover p {
-  color: #3498db; /* 设置字体颜色为蓝色 */
+  color: #3498db;
 }
 
 .news.active {
@@ -565,7 +562,6 @@ div.gallery{
   color:#013674;
 }
 
-    /* Style for modal (popup image) */
     .modal {
       display: none;
       position: fixed;
