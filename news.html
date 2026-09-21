@@ -1,9 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Gong Lab</title>
     <link rel="stylesheet" href="./main.css">
+
+    <style>
+      .conference-grid {
+        display: grid;
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+        gap: 32px 20px;
+        margin: 0 24px 40px;
+      }
+      .conference-grid > .news { margin: 0; min-width: 0; padding: 10px; }
+      .conference-grid .news img {
+        width: 100% !important;
+        height: 200px !important;
+        object-fit: contain;
+      }
+      .conference-grid .news p { text-indent: 0; overflow-wrap: anywhere; }
+      .conference-grid .conference-caption { font-size: 14px; }
+      @media (max-width: 1000px) {
+        .conference-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+      }
+      @media (max-width: 600px) {
+        .conference-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); margin: 0 12px 24px; gap: 24px 12px; }
+      }
+      @media (max-width: 360px) {
+        .conference-grid { grid-template-columns: minmax(0, 1fr); }
+      }
+    </style>
   </head>
 
 
@@ -13,7 +40,7 @@
       <div class='header'>
         <img class='headerimg' src='./img/bg.jpg'>
       </div>
-      
+
       <!--Navigation bar part---->
       <div align='center'>
         <nav>
@@ -33,14 +60,14 @@
       <!--Main part---->
       <!--
         <table style="width: 75%" border="0">
-                
-                
+
+
                 <div class='h2'>
                   <p align='center'> 
                     News                  
                   </p>
                  </div>
-                  
+
                 <div class='h3'>
                   <p align='center'> 
                     To be edited.
@@ -48,38 +75,16 @@
                 </div>
               -->
                 <br>   <br>             
-              <section aria-labelledby="ecvp-2026" style="margin: 0 20px 40px;">
-                <h2 id="ecvp-2026" class="news-current">European Conference on Visual Perception (ECVP 2026)</h2>
-                <p style="text-align: center; text-indent: 0;">Bournemouth International Centre, Bournemouth, UK<br>August 23&ndash;27, 2026</p>
-                <div class="news-container">
-                  <article class="news" style="margin-left: 10px; max-width: 520px; min-width: 0;">
-                    <a href="./files/ECVP_poster_v5.pdf" aria-label="Open Qingsong Tan's ECVP 2026 poster PDF">
-                      <img src="./img/poster/ecvp-2026-tan.png" alt="Learned social interaction history prioritizes face perception and attentional selection" style="max-width: 100%; object-fit: contain;">
-                    </a>
-                    <p style="font-size: 14px; text-indent: 0;"><b>Learned social interaction history prioritizes face perception and attentional selection</b></p>
-                    <p style="font-size: 14px; text-indent: 0;">Qingsong Tan, Ke Jia, Mengyuan Gong</p>
-                    <a href="./files/ECVP_poster_v5.pdf">[pdf]</a>
-                  </article>
-                  <article class="news" style="margin-left: 10px; max-width: 520px; min-width: 0;">
-                    <a href="./files/ecvp_rba_v6.pdf" aria-label="Open Xianming Dai's ECVP 2026 poster PDF">
-                      <img src="./img/poster/ecvp-2026-dai.png" alt="Neural representations of relational-based attentional template in frontoparietal network" style="max-width: 100%; object-fit: contain;">
-                    </a>
-                    <p style="font-size: 14px; text-indent: 0;"><b>Neural representations of relational-based attentional template in frontoparietal network</b></p>
-                    <p style="font-size: 14px; text-indent: 0;">Xianming Dai, Mengyuan Gong*</p>
-                    <a href="./files/ecvp_rba_v6.pdf">[pdf]</a>
-                  </article>
-                </div>
-              </section>
-              <div class="news-container">
+              <div class="news-container conference-grid">
                   <div class="news" onclick="openModal(this)">
                     <img src="./img/poster/Yilin_preparatory attention.png"  alt="Lanzhou">
                     <p style="font-size: 14px;">中国神经科学学会第十五届全国学术会议<br><br>杭州, 2021</p>
-                    <p class="read-more"><1p>
+
                     </div>
                     <div class="news" onclick="openModal(this)">
                       <img src="./img/poster/Yilin_reward relationship.jpg" style="width: 160px;height: 200px" alt="Lanzhou">
                       <p style="font-size: 14px;">全国心理学大会<br><br>线上, 2022</p>
-                      <p class="read-more"><1p>
+
                       </div>
                     <div class="news" onclick="openModal(this)">
                       <img src="./img/poster/Chaoya_SAD.jpg" alt="Lanzhou">
@@ -87,18 +92,54 @@
                         <br><br>
                         金华, 2023
                       </p>
-                      <p class="read-more"><1p>
+
                       </div>
                       <div class="news" onclick="openModal(this)">
                         <img src="./img/poster/Qingsong_spatial.jpg" alt="Lanzhou">
                         <p style="font-size: 14px;">中国心理学会普通心理和实验心理专业委员会学术年会<br><br>兰州, 2024</p>
-                        <p class="read-more"><1p>
+
                         </div>
                       <div class="news" onclick="openModal(this)">
                         <img src="./img/poster/Xianming_relation.jpg" alt="Lanzhou">
                         <p style="font-size: 14px;">中国心理学会普通心理和实验心理专业委员会学术年会<br><br>成都, 2025</p>
-                        <p class="read-more"><1p>
+
                         </div>
+<article class="news">
+                    <a href="./files/ECVP_poster_v5.pdf" aria-label="Open Qingsong Tan's ECVP 2026 poster PDF">
+                      <img src="./img/poster/ecvp-2026-tan.png" alt="Learned social interaction history prioritizes face perception and attentional selection" style="max-width: 100%; object-fit: contain;">
+                    </a>
+<p class="conference-caption">European Conference on Visual Perception (ECVP 2026)<br><br>Bournemouth International Centre, Bournemouth, UK<br>August 23&ndash;27, 2026</p>
+                    <p style="font-size: 14px; text-indent: 0;"><b>Learned social interaction history prioritizes face perception and attentional selection</b></p>
+                    <p style="font-size: 14px; text-indent: 0;">Qingsong Tan, Ke Jia, Mengyuan Gong</p>
+                    <a href="./files/ECVP_poster_v5.pdf">[pdf]</a>
+                  </article>
+<article class="news">
+                    <a href="./files/ecvp_rba_v6.pdf" aria-label="Open Xianming Dai's ECVP 2026 poster PDF">
+                      <img src="./img/poster/ecvp-2026-dai.png" alt="Neural representations of relational-based attentional template in frontoparietal network" style="max-width: 100%; object-fit: contain;">
+                    </a>
+<p class="conference-caption">European Conference on Visual Perception (ECVP 2026)<br><br>Bournemouth International Centre, Bournemouth, UK<br>August 23&ndash;27, 2026</p>
+                    <p style="font-size: 14px; text-indent: 0;"><b>Neural representations of relational-based attentional template in frontoparietal network</b></p>
+                    <p style="font-size: 14px; text-indent: 0;">Xianming Dai, Mengyuan Gong*</p>
+                    <a href="./files/ecvp_rba_v6.pdf">[pdf]</a>
+                  </article>
+<article class="news">
+                    <a href="./files/poster-ouyang-experience-driven-attention.pdf" aria-label="Open Shuheng Ouyang's poster PDF">
+                      <img src="./img/poster/poster-ouyang.png" alt="A shared code for generalization but dissociable specificity in experience-driven attention" style="max-width: 100%; object-fit: contain;">
+                    </a>
+<p class="conference-caption">浙江省神经科学学会第十四届学术年会<br><br>温州，中国<br>2026年8月1&ndash;2日</p>
+                    <p style="font-size: 14px; text-indent: 0;"><b>A shared code for generalization but dissociable specificity in experience-driven attention</b></p>
+                    <p style="font-size: 14px; text-indent: 0;">Shuheng Ouyang, Qingsong Tan, Mengyuan Gong*</p>
+                    <a href="./files/poster-ouyang-experience-driven-attention.pdf">[pdf]</a>
+                  </article>
+<article class="news">
+                    <a href="./files/poster-zhang-social-interaction.pdf" aria-label="Open Xiaodong Zhang's poster PDF">
+                      <img src="./img/poster/poster-zhang.png" alt="Associative learning of social interaction alters attention to human faces" style="max-width: 100%; object-fit: contain;">
+                    </a>
+<p class="conference-caption">浙江省神经科学学会第十四届学术年会<br><br>温州，中国<br>2026年8月1&ndash;2日</p>
+                    <p style="font-size: 14px; text-indent: 0;"><b>Associative learning of social interaction alters attention to human faces</b></p>
+                    <p style="font-size: 14px; text-indent: 0;">Xiaodong Zhang, Qingsong Tan, Mengyuan Gong</p>
+                    <a href="./files/poster-zhang-social-interaction.pdf">[pdf]</a>
+                  </article>
                 </div>
   <!-- Modal for image enlargement -->
   <div id="myModal" class="modal">
